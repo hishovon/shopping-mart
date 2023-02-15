@@ -37,12 +37,21 @@ function updateIphoneTotal(newIphoneNumber){
 
 
 
+
+
+
+
 document.getElementById('btn-iphone-plus').addEventListener('click',function(){
 
    const newIphoneNumber = updateIphoneNumber(true);
 
    updateIphoneTotal(newIphoneNumber);
-})
+
+   calculateSubTotal()
+
+
+
+});
 
 
 // iphone minus ...........
@@ -53,6 +62,11 @@ document.getElementById('btn-iphone-minus').addEventListener('click',function(){
     const newIphoneNumber = updateIphoneNumber(false);
    
     updateIphoneTotal(newIphoneNumber);
+    calculateSubTotal()
 
 })
+
+
+
+
 

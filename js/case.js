@@ -38,6 +38,7 @@ document.getElementById('btn-case-plus').addEventListener('click',function(){
 const newCaseNumber= updateCaseNumber(true);
 
 updateCaseTotal(newCaseNumber);
+calculateSubTotal();
 
 })
 
@@ -49,6 +50,7 @@ document.getElementById('btn-case-minus').addEventListener('click',function(){
     const newCaseNumber= updateCaseNumber(false);
 
 updateCaseTotal(newCaseNumber);
+calculateSubTotal();
 
 
 })
